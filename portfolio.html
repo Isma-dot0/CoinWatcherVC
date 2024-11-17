@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="market.html">Market</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="portfolio">
+            <h2>Your Portfolio</h2>
+            <table id="portfolio-table">
+                <thead>
+                    <tr>
+                        <th>Cryptocurrency</th>
+                        <th>Holdings</th>
+                        <th>Value (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="tax-estimator">
+            <h2>Tax Estimator</h2>
+            <form id="tax-form">
+                <label for="crypto-select">Select Cryptocurrency:</label>
+                <select id="crypto-select"></select>
+                <button type="button" id="estimate-tax">Estimate Tax</button>
+            </form>
+            <div id="tax-results"></div>
+        </section>
+    </main>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

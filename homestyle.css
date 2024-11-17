@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: #1e1e1e;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #1e88e5;
+}
+
+/* Bitcoin Chart */
+#chart-section {
+    margin: 20px;
+    width: 70%;
+    float: left;
+}
+
+#bitcoin-chart {
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* News Ticker */
+#news-ticker {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1e1e1e;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.ticker {
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.ticker ul {
+    display: inline-block;
+    animation: ticker-scroll 15s linear infinite;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ticker li {
+    display: inline-block;
+    padding: 0 50px;
+    color: #ffffff;
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
